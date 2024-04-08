@@ -1,0 +1,39 @@
+<!DOCTYPE html>>
+<script>
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+function multiplyNumeric(menu) {
+    for ( let key in menu) {
+        alert(typeof(menu[key]))
+        if (typeof(menu[key]) == typeof 1) {
+    alert(menu[key]);
+    menu[key] *= 2 ;
+} else {
+    continue;
+}
+}
+}
+
+multiplyNumeric(menu);
+
+// после вызова функции
+menu = {
+  width: 400,
+  height: 600,
+  title: "My menu"
+};
+
+
+</script>
+
+
+if (typeof(menu[key]) == number) {
+    alert(menu[key]);
+    menu[key] *= 2 ;
+} else {
+    continue;
+}

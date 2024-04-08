@@ -1,0 +1,70 @@
+<!DOCTYPE html>>
+<script>
+    'use strict'
+    let calculator = {
+        read : function() {
+        this.a = +prompt("a?", "");
+        this.b = +prompt ("b?", "");
+        ;
+    },
+        sum : function() {
+        let sum = this.a + this.b;
+        return sum;
+    }, 
+        mul : function() {
+        let mul = this.a * this.b;
+        return mul
+    },
+
+};
+    
+    calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
+
+
+
+
+
+
+
+
+   /* function read() {
+        this.a = +prompt("a?", "");
+        this.b = +prompt ("b?", "");
+        return;
+    };
+
+    function sum() {
+        let sum = this.a + this.b;
+        return sum;
+    };
+
+    function mul() {
+        let mul = this.a * this.b;
+        return mul;
+    };
+
+    calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() ); 
+
+
+
+    calculator.read = function() {
+        calculator.a = +prompt("a?", "");
+        calculator.b = +prompt ("b?", "");
+        return;
+    }
+
+    calculator.sum = function() {
+        let sum = calculator.a + calculator.b;
+        return sum; 
+    }
+
+    calculator.mul = function() {
+        let mul = calculator.a * calculator.b;
+        return mul;
+    }
+*/
+</script> 

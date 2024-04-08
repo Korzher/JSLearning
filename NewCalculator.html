@@ -1,0 +1,46 @@
+<!DOCTYPE html>>
+<script>
+    'use strict'
+    function Calculator() {
+        this.read = function () {
+            this.a = +prompt("a?", "");
+            this.b = +prompt("b?", "");
+            alert(this.a);
+        };
+        this.sum = function() { 
+           return this.a + this.b;
+        };
+        this.mul = function () {
+            return this.a * this.b;
+        };
+    
+    }
+   let calculator = new Calculator();
+    calculator.read();
+
+alert( "Sum=" + calculator.sum() );
+alert( "Mul=" + calculator.mul() );
+
+</script>
+
+
+let Calculator = {
+    read : function() {
+    this.a = +prompt("a?", "");
+    this.b = +prompt ("b?", "");
+    ;
+},
+    sum : function() {
+    let sum = this.a + this.b;
+    return sum;
+}, 
+    mul : function() {
+    let mul = this.a * this.b;
+    return mul
+},
+
+};
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
