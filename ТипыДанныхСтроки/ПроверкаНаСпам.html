@@ -1,0 +1,17 @@
+<!DOCTYPE html>>
+<script>
+
+function checkSpam(str) {
+    let text = str.toLowerCase();
+    
+    if (text.includes("viagra") || text.includes("xxx")) {
+return true;    // includes уже возвращает true или False, пожтому проверка тут не нужна
+} else {
+return false;
+}
+}
+
+alert(checkSpam('buy vIAgRa now'));
+alert(checkSpam('free XXxxXxX'));
+alert(checkSpam('Harmless Rabbit'));
+</script>
