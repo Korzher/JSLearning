@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<script>
+        let num;
+        let arr = [];
+        let result = 0;
+        function sumInput() {
+    num = prompt("Введите, пожалуйста, значение", "0")
+    if (isFinite(num)) {
+        if (num == null || num === "") {
+        for (let item of arr) {
+        result = result + +item;
+        }  
+        alert(result);  
+    
+        } else {
+        arr.push(num);
+        sumInput();
+        console.log("Kusya_durek");
+    }
+
+    } else {
+      for (let item of arr) {
+        result = result + +item;
+      }  
+      alert(result);
+    }
+}
+
+sumInput();
+
+
+</script>
+
