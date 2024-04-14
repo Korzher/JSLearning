@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script>
+
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 29 };
+
+let users = [ vasya, petya, masha ];
+
+function getAverageAge(users) {
+    let result = users.reduce((sum, current) => sum + current.age, 0);
+    return (result / users.length);
+};
+
+alert( getAverageAge(users) );
+
+</script>

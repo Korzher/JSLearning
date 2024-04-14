@@ -1,0 +1,17 @@
+https://learn.javascript.ru/task/map-objects
+
+<!DOCTYPE html>
+<script>
+
+let vasya = { name: "Jake", surname: "Sullyvan", id: 1 };
+let petya = { name: "Kolya", surname: "Ivanov", id: 2 };
+let masha = { name: "Maria", surname: "Magdalena", id: 3 };
+
+let users = [ vasya, petya, masha ];
+
+let usersMapped = users.map(item => ({
+    fullName: `${item.name} ${item.surname}`,
+    id: item.id
+}))
+
+</script>

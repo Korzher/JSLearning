@@ -1,0 +1,26 @@
+<!DOCTYPE html>>
+<script>
+
+function unique(arr) {
+  let unique = [];
+  let mapped = arr.map(item => {
+    if (!unique.includes(item)) {
+      unique.push(item);
+    }
+  });
+  return unique;
+}
+
+let strings = ["кришна", "кришна", "харе", "харе",
+  "харе", "харе", "кришна", "кришна", ":-O"
+];
+
+alert( unique(strings) ); // кришна, харе, :-O
+
+
+</script>
+
+
+ННужно взять строку - сравнить ее с элементом нового массива, 
+Если совпадения нет (Includes?), то добавляем, если есть, то продолжаем
+И так до конца массива
