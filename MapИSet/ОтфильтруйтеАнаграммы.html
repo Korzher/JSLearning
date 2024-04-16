@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<script>
+
+let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+let sorted =[];
+function word(str) {
+    sorted = [];
+    result = str.toLowerCase().split("");
+    sorted.push(...result);
+    sorted = sorted.sort();
+    alert(sorted);
+    return sorted;
+};
+
+let map = new Map();
+for (let value of arr) map.set(value, word(value));
+alert(Array.from(map));
+
+alert( aclean(arr) ); 
+
+</script>
+
+Из каждой группы анаграмм должно остаться только одно слово, не важно какое.
