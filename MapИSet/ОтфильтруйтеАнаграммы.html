@@ -6,18 +6,26 @@ let sorted =[];
 function word(str) {
     sorted = [];
     result = str.toLowerCase().split("");
-    sorted.push(...result);
-    sorted = sorted.sort();
-    alert(sorted);
+    sorted = result.sort().join("");
     return sorted;
 };
 
 let map = new Map();
-for (let value of arr) map.set(value, word(value));
-alert(Array.from(map));
+for (let value of arr) map.set(word(value), value);
+
+function aclean(arr) {
+
+    return Array.from(map.values());
+    }
+
+
 
 alert( aclean(arr) ); 
 
 </script>
 
 Из каждой группы анаграмм должно остаться только одно слово, не важно какое.
+
+Для каждого мапа создать два массива В один добавлять ключи,
+во второй  добавлять велью - проверять по велью во втором массиве
+если велью есть, то пропуск, если нет, то добавляем. 
