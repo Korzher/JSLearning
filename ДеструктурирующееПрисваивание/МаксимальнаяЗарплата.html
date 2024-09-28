@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<script>
+    'use strict'
+
+    let salaries = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
+};
+
+function topSalary(salaries) {
+    if (Object.keys(salaries).length === 0) {
+      return null
+    };
+    let max = 0;
+    for (let [key, value] of Object.entries(salaries)) {
+        max = Math.max(max, value);
+    }
+    for (let [key, value] of Object.entries(salaries)) {
+        if (value == max) {
+            return key;
+        } else {
+        }
+    }
+    
+}
+
+
+</script>
