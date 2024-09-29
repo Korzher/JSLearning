@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<script>
+
+let date = new Date(2012, 0, 3);
+
+
+function getLocalDay(date) {
+    let weekDay = date.getDay();
+    if (weekDay == 0 ) {
+        weekDay = 7;
+    }
+    return weekDay
+}
+
+alert( getLocalDay(date) );
+
+</script>
