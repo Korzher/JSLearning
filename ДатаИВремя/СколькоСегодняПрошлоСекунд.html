@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<script>
+
+  function getSecondsToday() {
+    let now = new Date();
+    let nowSecond = now.getTime();
+    let zero = now.setHours(0, 0, 0, 0);
+    let seconds = (nowSecond - zero) / 1000;
+    return seconds;
+  }  
+
+  alert(getSecondsToday());
+
+
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<script>
+    
+    function formatDate(date) {
+            let now = new Date();
+            let n = 0;
+            if (now - date < 1000) {
+                return "прямо сейчас"
+            } else if (1000 <= now - date && now - date < 60000) {
+                n = Math.round((now - date) / 1000 )
+                return `${n} сек. назад`  
+            } else if (60000 <= now - date && now - date < 36e6) {
+                n = Math.round((now - date) / 1000 / 60 )
+                return `${n} мин. назад`
+            } else {
+                let year = date.getFullYear().toString().slice(2);
+                let month = (date.getMonth() + 1).toString();
+                if (month.length == 1) {
+                  month = "0" + month;
+                }
+                let newDate = (date.getDate()).toString();
+                if (newDate.length == 1) {
+                  newDate = "0" + newDate;
+                }
+    
+                return `${newDate}.${month}.${year} ${date.getHours()}:${date.getMinutes()}`
+            }
+    
+        }
+    
+    </script>
