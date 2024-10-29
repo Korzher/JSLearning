@@ -1,0 +1,34 @@
+<!DOCTYPE html>>
+<script>
+
+    //С использованием цикла
+    function sumToCicle(n) {
+        let result = 0;
+        for (let i = 0; i <= n; i++) {
+            result += i;
+        }
+        return result
+    }
+
+    //Рекурсия
+    function sumToRec(n) {
+        if (n == 1) {
+            return n;
+        } else {
+            return n + sumToRec(n - 1)
+        }
+    }
+    
+    //Арифметическая прогрессия
+    function sumToProgr(n) {
+    return (1 + n) / 2 * n    
+    }
+
+
+
+    alert(sumToCicle(100));
+    alert(sumToRec(100));
+    alert(sumToProgr(100));
+
+
+</script>
