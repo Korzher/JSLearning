@@ -1,0 +1,22 @@
+<!DOCTYPE html>>
+<script>
+
+    let a = 1;
+    let b = 1;
+    let c = a + b;
+
+    function fib(n) {
+        if (n == 3) {
+         return c
+    } else {
+            a = b;
+            b = c;
+            c = a + b;
+            return fib(n - 1);
+
+        }
+    }
+
+    alert(fib(77));
+
+</script>
