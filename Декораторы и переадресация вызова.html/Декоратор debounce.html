@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<script>
+
+function debounce(f, ms) {
+let timerId;
+
+return function() {
+if (timerId) {
+  clearTimeout(timerId);
+  timerId = setTimeout(() => f.apply(this, arguments) , ms);
+} else {
+  timerId = setTimeout(() => f.apply(this, arguments) , ms);
+};
+};
+};
+
+
+
+
+
+
+/* let f = _.debounce(alert, 1000);
+
+f("a");
+setTimeout( () => f("b"), 200);
+setTimeout( () => f("c"), 500);
+*/ 
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function debounce(f, ms) {
+    let timerId;
+
+return function wrapper () {
+    clearTimeout(timerId);
+    timerId = setTimeout(() => f.apply(this, arguments), 1000);
+}
+
+}
